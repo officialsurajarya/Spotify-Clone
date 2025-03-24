@@ -1,0 +1,380 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* -------sidebar------------ */
+
+.sidebar {
+  background-color: black;
+  width: 300px;
+  border-radius: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  background-color: #121212;
+  flex-direction: column;
+  border-radius: 1rem;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+  margin: 1rem 0.5rem;
+}
+
+.nav-option {
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover {
+  line-height: 2.5rem;
+  opacity: 1;
+}
+
+.nav-option i {
+  font-size: 1.25rem;
+}
+
+.nav-option a {
+  font-weight: 600;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.nav-home {
+  opacity: 1;
+}
+
+.library {
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin: 0.5rem;
+  border-radius: 1rem;
+}
+
+.lib-top {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.your-library {
+  opacity: 0.7;
+  padding: 0 0.75rem;
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+}
+
+.your-library:hover {
+  opacity: 1;
+}
+
+.your-library img {
+  height: 1.25rem;
+}
+
+.your-library a {
+  padding-left: 0.75rem;
+  font-size: 1rem;
+}
+
+.lib-icon {
+  font-size: 1.25rem;
+}
+
+.lib-icon .plus {
+  margin-right: 0.75rem;
+}
+
+.lib-icon .fa-solid {
+  opacity: 0.7;
+}
+
+.lib-icon .fa-solid:hover {
+  opacity: 1;
+}
+
+.lib-box {
+  background-color: #1f1f1f;
+  padding: 1.5rem 1rem;
+  margin: 0.75rem;
+  border-radius: 1rem;
+}
+
+.lib-box p {
+  padding: 1rem 0;
+  opacity: 0.8;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+}
+
+.lib-box a {
+  color: #000;
+  font-size: 1rem;
+}
+
+/*-------------- Main Content------------------ */
+
+.main-content {
+  background-color: #121212;
+  flex: 1;
+  overflow: auto;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.nav-main {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  height: 70px;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-main-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-main-left i {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: 1rem;
+  border-radius: 50px;
+  background-color: black;
+}
+
+.nav-main-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-main-right button {
+  margin-right: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-main-right button i {
+  padding-right: 0.5rem;
+}
+
+.nav-main-right .rspace {
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.nav-main-left .o {
+  opacity: 0.7;
+}
+
+.nav-main-left .o:hover {
+  opacity: 1;
+}
+
+h2 {
+  padding: 3rem 0 1rem 1rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  background-color: #1f1f1f;
+  width: 170px;
+  height: 300px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.card img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.card .card-title {
+  padding: 1.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card .card-info {
+  opacity: 0.8;
+}
+
+.footer {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  border-top: 2px solid white;
+  opacity: 0.3;
+  width: 95%;
+  height: 50%;
+}
+
+/* ---------------Music Player---------------- */
+
+.music-player {
+  background-color: black;
+  position: fixed;
+  display: flex;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.music-info {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.music-info .music-img {
+  width: 60px;
+}
+
+.music-info img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.music-info div {
+  margin-right: 1rem;
+}
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.8em;
+  gap: 0.5rem;
+}
+
+.music-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.music-icon .lspace {
+  padding-left: 1rem;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.player-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.opacity-low {
+  opacity: 0.7;
+  width: 25px;
+}
+
+.play {
+  width: 35px;
+  opacity: 1;
+}
+
+.player img {
+  margin: 0 1rem;
+  height: 100%;
+}
+
+.player .time {
+  display: flex;
+  gap: 1rem;
+}
+
+.time input {
+  width: 300px;
+}
+
+.controls {
+  display: flex;
+  font-size: 1.7rem;
+  gap: 1rem;
+}
+
+.fa-volume-high {
+  font-size: 1.5rem;
+}
+
+meter {
+  margin-left: 5px;
+}
+
+@media (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+}
